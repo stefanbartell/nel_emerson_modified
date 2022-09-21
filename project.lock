@@ -1,0 +1,18 @@
+setup:
+  cmd: python -m spacy run setup
+  script:
+    - python -m pip install -r requirements.txt
+  deps:
+    - path: requirements.txt
+      md5: e5865d4b3b5bc44c9d22ecacfeea82d7
+  outs: []
+  spacy_version: 3.4.1
+  spacy_git_version: 5c2a00cef
+download:
+  cmd: python -m spacy run download
+  script:
+    - python -m spacy download en_core_web_md
+  deps: []
+  outs: []
+  spacy_version: 3.4.1
+  spacy_git_version: 5c2a00cef
